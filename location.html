@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    <p>History
+        Kingdom Seekers Fellowshi-Kayole is located  in kayole behind equity bank along Spine Road.
+        </p>
+        <p id="demo">If statements</p>
+        <p id="elvis">If statements</p>
+        <p id="kisina">If statements</p>
+        <p id="mulinge">Do while</p>
+    
+       <script>
+        const hour= new Date().getHours();
+//const hour=10;
+        let message; 
+        if(hour<1){
+          message= "Wake up";
+        } else if (hour <11) {  
+               message="Good morning 12354";
+        }
+        else{
+             message="Good evening12345";
+
+        }
+    
+            
+   document.getElementById("demo").innerHTML= message;
+
+    let day;
+    switch( new Date().getDay()){
+case 0:
+        day ="Sunday";
+        break;
+case 1:
+        day ="Monday";
+        break;
+case 2:
+        day ="Tuesday";
+        break;
+case 3:
+        day ="Wensday";
+        break;
+        case 0:
+case 4:day ="Thursday";
+        break;
+case 5:
+        day ="Friday";
+        break;
+case 6:
+        day ="Saturday";
+        break;
+    }
+    document.getElementById("elvis").innerHTML="Today is " + day;
+  let name = "";
+  let i =90;
+  while(i<=100){
+
+        name +="<br>The number is " + i; 
+        i++;
+   } 
+   document.getElementById("kisina").innerHTML=name;
+        
+        let nime="";
+        let u=2;
+        do{
+                nime +="<br> The number is " + u;
+                u++;
+        }
+        while(u<10);
+        document.getElementById("mulinge").innerHTML=nime;
+        
+        </script>
+
+
+</body>
+</html>
